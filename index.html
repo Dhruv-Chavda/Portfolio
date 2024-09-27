@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dhruv Chavda Portfolio</title>
+    <!-- icons font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Link to the external CSS file -->
+<link rel="stylesheet" href="styles.css">
+    <!-- FontAwesome for Social Media Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Header Section with Navigation -->
+<!-- Navigation Section -->
+<nav id="navbar">
+    <div class="logo">
+        <h1>Dhruv Chavda</h1>
+    </div>
+    <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#parallax">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</nav>
+
+    <section id="hero">
+        <div class="hero-container">
+            <div class="hero-text">
+                <h1>Welcome to My Portfolio</h1>
+                <p>I am Dhruv Chavda, a UI/UX designer passionate about creating delightful digital experiences.</p>
+                <a href="#portfolio" class="button">Explore My Work</a>
+            </div>
+            <div class="hero-image">
+                <img src="images/Myphoto.jpg" alt="Hero Image">
+            </div>
+        </div>
+    </section>
+    
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+    
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+            hamburger.classList.toggle('active');
+        });
+    </script>
+    
+
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section">
+        <h2>My Work</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <img src="project1.png" alt="Project 1">
+                <h3>Project 1</h3>
+                <p>A brief description of Project 1.</p>
+            </div>
+            <div class="project-card">
+                <img src="project2.png" alt="Project 2">
+                <h3>Project 2</h3>
+                <p>A brief description of Project 2.</p>
+            </div>
+        </div>
+    </section>
+
+<!-- Parallax Section -->
+<section id="parallax" class="parallax-section">
+    <div class="parallax"></div>
+    <div class="content">
+        <h2>About me</h2>
+        <p>Hi, I'm Dhruv Chavda, a passionate UI/UX designer with a Bachelor's degree in Computer Applications (BCA). I am also a Google Certified UI/UX Designer.
+            With a strong background in design principles and user experience, I aim to create intuitive, user-centered designs that not only look great but also solve real-world problems.
+            I specialize in tools like Figma, Adobe Illustrator, and Photoshop to bring my creative ideas to life. My design philosophy revolves around simplicity and clarity, focusing on enhancing user satisfaction.
+            I'm continuously learning and exploring new design trends to keep my skills sharp and innovative. Let's connect and make some awesome projects together!</p>
+            <a href="resume/Dhruv Chavda Resume .pdf" download class="button download-cv">Download CV</a>
+
+    </div>
+</section>
+
+    
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <h2>My Skills</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <div class="skill-icon">
+                    <img src="https://img.icons8.com/?size=100&id=20909&format=png&color=000000" alt="HTML Icon" style="width: 30px; height: 30px;">
+                </div>
+                <div class="skill-details">
+                    <h3>HTML & CSS</h3>
+                    <div class="progress-bar">
+                        <div class="progress html" style="width: 0%;"></div>
+                    </div>
+                    <span class="percentage">70%</span>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-icon">
+                    <img src="https://img.icons8.com/?size=100&id=zfHRZ6i1Wg0U&format=png&color=000000" alt="Figma Icon" style="width: 30px; height: 30px;">
+                </div>
+                <div class="skill-details">
+                    <h3>Figma</h3>
+                    <div class="progress-bar">
+                        <div class="progress figma" style="width: 0%;"></div>
+                    </div>
+                    <span class="percentage">80%</span>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-icon">
+                    <img src="https://img.icons8.com/?size=100&id=13631&format=png&color=000000" alt="Adobe Illustrator Icon" style="width: 30px; height: 30px;">
+                </div>
+                <div class="skill-details">
+                    <h3>Adobe Illustrator</h3>
+                    <div class="progress-bar">
+                        <div class="progress illustrator" style="width: 0%;"></div>
+                    </div>
+                    <span class="percentage">60%</span>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-icon">
+                    <img src="https://img.icons8.com/?size=100&id=13677&format=png&color=000000" alt="Adobe Photoshop Icon" style="width: 30px; height: 30px;">
+                </div>
+                <div class="skill-details">
+                    <h3>Adobe Photoshop</h3>
+                    <div class="progress-bar">
+                        <div class="progress photoshop" style="width: 0%;"></div>
+                    </div>
+                    <span class="percentage">60%</span>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-icon">
+                    <img src="https://img.icons8.com/?size=100&id=iWw83PVcBpLw&format=png&color=000000" alt="Canva Icon" style="width: 30px; height: 30px;">
+                </div>
+                <div class="skill-details">
+                    <h3>Canva</h3>
+                    <div class="progress-bar">
+                        <div class="progress canva" style="width: 0%;"></div>
+                    </div>
+                    <span class="percentage">100%</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script>
+        window.onload = function() {
+            const progressBars = document.querySelectorAll('.progress');
+            const widths = ['70%', '80%', '60%', '60%', '100%'];
+    
+            progressBars.forEach((progressBar, index) => {
+                setTimeout(() => {
+                    progressBar.style.width = widths[index];
+                }, index * 500); // Each bar animates with a slight delay
+            });
+        };
+    </script>
+    
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2>Contact Me</h2>
+        <div class="contact-container">
+            <!-- Left Side: Contact Details and Social Media -->
+            <div class="contact-details">
+                <h1>Lets get in touch</h1>
+                <p><i class="fas fa-envelope"></i> dhruvrajchavda2910@gmail.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> Vadodara, Gujarat, India</p>
+                
+                <!-- Social Media Links -->
+                <h1>socials</h1>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.behance.net/yourprofile" target="_blank"><i class="fab fa-behance"></i></a>
+                    <a href="https://www.instagram.com/yourprofile" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/yourprofile" target="_blank"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+
+            <!-- Right Side: Contact Form -->
+
+            <div class="contact-form">
+                <h1>Contact me</h1>
+
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="button">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+
+      
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Dhruv Chavda. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
